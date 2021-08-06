@@ -1,4 +1,7 @@
+import { HttpClientModule } from '@angular/common/http';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { FormsModule } from '@angular/forms';
+import { HttpDataService } from 'src/app/services/data.service';
 
 import { CountriesComponent } from './countries.component';
 
@@ -8,7 +11,8 @@ describe('CountriesComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CountriesComponent ]
+      declarations: [ CountriesComponent ],
+      imports: [HttpClientModule, FormsModule ]
     })
     .compileComponents();
   });
