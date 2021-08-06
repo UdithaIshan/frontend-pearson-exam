@@ -84,7 +84,7 @@ export class CountriesComponent implements OnInit {
       if (this.isEditMode) this.updateCountry();
       else this.addCountry();
     } else {
-      console.log('Enter valid data!');
+      alert('Enter valid data!');
     }
   }
 }
